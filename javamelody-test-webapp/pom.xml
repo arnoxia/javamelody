@@ -219,7 +219,7 @@
 		<dependency>
 			<groupId>org.mongodb</groupId>
 			<artifactId>mongodb-driver</artifactId>
-			<version>3.3.0</version>
+			<version>3.12.10</version>
 			<optional>true</optional>
 		</dependency>
 		<!-- Dépendance optionnelle AWS Java SDK -->
