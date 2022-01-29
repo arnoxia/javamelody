@@ -29,7 +29,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.0.5</version>
+			<version>8.0.28</version>
 		</dependency>
 		<!-- Presque les mêmes dépendances que javamelody-core -->
 		<dependency>
@@ -226,7 +226,7 @@
 		<dependency>
 			<groupId>com.amazonaws</groupId>
 			<artifactId>aws-java-sdk-cloudwatch</artifactId>
-			<version>1.11.136</version>
+			<version>1.12.150</version>
 			<optional>true</optional>
 		</dependency>
 		<!-- Dépendance JUnit -->
