@@ -203,7 +203,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
-			<version>4.3.10.RELEASE</version>
+			<version>5.0.0.RELEASE</version>
 			<optional>true</optional>
 		</dependency>
 		<!-- Dépendance optionnelle google guice (aop) -->
@@ -366,12 +366,13 @@
 						<configuration>
 							<target>
 								<!-- écrit la version du pom dans JAVAMELODY-VERSION.properties -->
-								<echo message="# Version of JavaMelody${line.separator}" file="JAVAMELODY-VERSION.properties" />
-								<echo message="version=${project.version}" append="true" file="JAVAMELODY-VERSION.properties" />
+								<echo message="# Version of JavaMelody${line.separator}" file="JAVAMELODY-VERSION.properties"/>
+								<echo message="version=${project.version}" append="true" file="JAVAMELODY-VERSION.properties"/>
 								<!-- avec antrun 1.7, CR ne peut être écrit en même temps que LF -->
-								<echo message="&#xD;" append="true" file="JAVAMELODY-VERSION.properties" />
-								<echo message="&#xA;" append="true" file="JAVAMELODY-VERSION.properties" />
-								<copy file="JAVAMELODY-VERSION.properties" tofile="target/classes/JAVAMELODY-VERSION.properties" />
+								<echo message="" append="true" file="JAVAMELODY-VERSION.properties"/>
+								<echo message="
+" append="true" file="JAVAMELODY-VERSION.properties"/>
+								<copy file="JAVAMELODY-VERSION.properties" tofile="target/classes/JAVAMELODY-VERSION.properties"/>
 
 								<!-- appel de Ant et copie du résultat dans le site -->
 								<!-- On n'appelle plus Ant pour mettre les artefacts dans le site
